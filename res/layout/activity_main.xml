@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">    //垂直线性布局
+  
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:text="                     测试文字，测试文字" />
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TvColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color" />
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/red" />
+
+          <Button
+              android:id="@+id/btnGreen"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/green" />
+
+            <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue" />
+
+    </LinearLayout>                        //设置颜色的布局
+    
+    <LinearLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TvSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size" />
+
+        <Button
+            android:id="@+id/btnBigger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bigger" />
+
+          <Button android:id="@+id/smaller"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:text="@string/smaller"
+            />
+         
+          </LinearLayout>                 //设置大小的布局
+          
+   <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TvStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/style" />
+
+        <Button
+            android:id="@+id/btnBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加粗" />
+
+          <Button
+              android:id="@+id/btnItalic"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/italic" />
+
+            <Button
+                android:id="@+id/btnMoren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moren" />
+  </LinearLayout>                     //设置样式的布局
+
+   <LinearLayout 
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+       <TextView
+           android:id="@+id/TvContent"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="@string/content" />
+
+       <EditText
+           android:id="@+id/content"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:ems="10" />
+   
+      </LinearLayout>                              //设置内容的布局
+
+</LinearLayout>
